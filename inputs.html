@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs</title>
+  </head>
+  <body>
+    <!-- Form input element section -->
+    <form action="">
+      <input type="button" value="Button" /> <br />
+      <input type="checkbox" name="html" id="html" />
+      <label for="html">HTML</label> <br />
+      <input type="checkbox" name="css" id="css" />
+      <label for="css">CSS</label> <br />
+      <p>Choose the color you want for the project.</p>
+      <input type="color" name="head" id="head" value="#fff333" />
+      <label for="head">Head</label> <br />
+      <input type="color" name="body" id="body" value="#000333" />
+      <label for="body">Body</label> <br />
+      <label for="start">Start date:</label>
+      <input
+        type="date"
+        name="class-start"
+        id="start"
+        value="2022-06-06"
+        min="2022-06-01"
+        max="2022-06-10"
+      />
+      <br />
+      <label for="end">End date:</label>
+      <input
+        type="date"
+        name="class-end"
+        id="end"
+        value="2022-11-09"
+        min="2022-10-31"
+        max="2022-11-30"
+      />
+      <br />
+      <label for="tutorial-time">Choose a time for your tutorial.</label>
+      <input
+        type="datetime-local"
+        name="tutorial-time"
+        id="tutorial-time"
+        value="2022-06-06T08:00"
+        min="2022-06-01T10:00"
+        max="2022-06-10T08:30"
+      />
+      <br />
+      <label for="email">Enter your email address here.</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        value="me@example.com"
+        size="30"
+        required
+      />
+      <br />
+      <label for="avatar">Choose a profile picture</label>
+      <input
+        type="file"
+        name="avatar"
+        id="avatar"
+        accept="image/png, image/jpeg"
+      />
+      <br />
+      <label for="pass">Password (8 characters minimum):</label>
+      <input
+        type="password"
+        name="password"
+        id="pass"
+        minlength="8"
+        size="30"
+        autocomplete=""
+        required
+      />
+      <p>Please select your favorite flavor.</p>
+      <input type="radio" name="flavor" id="strawberry" value="strawberry" />
+      <label for="strawberry">Strawberry</label> <br />
+      <input type="radio" name="flavor" id="vanilla" value="vanilla" />
+      <label for="vanilla">Vanilla</label> <br />
+      <input type="radio" name="flavor" id="chocolate" value="chocolate" />
+      <label for="chocolate">Chocolate</label> <br />
+      <input type="radio" name="flavor" id="milk" value="milk" />
+      <label for="milk">Milk</label> <br />
+      <label for="name">Name (4 to 8 characters):</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="John"
+        autocorrect="on"
+        size="30"
+        minlength="4"
+        maxlength="8"
+      />
+      <br />
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>

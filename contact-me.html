@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <p><em>Feel free to contact me anytime you wish.</em></p>
+    <p>Phone: 09061175321</p>
+    <p>
+      Email:
+      <a href="mailto:kingdanofficial@gmail.com">kingdanofficial@gmail.com</a>
+    </p>
+    <p>Address: No 9 Okafor Street, Umuzocha, Awka, Nigeria.</p>
+
+    <!-- Contact form -->
+    <form action="mailto:kingdanofficial@gmail.com" method="post">
+      <!-- name input -->
+      <div>
+        <label for="name">Your name (4 to 8 characters)</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="Daniel"
+          size="30"
+          minlength="4"
+          maxlength="8"
+        />
+      </div>
+      <br />
+
+      <!-- email input -->
+      <div>
+        <label for="email">Your email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value="my@example.com"
+          size="30"
+          required
+        />
+      </div>
+      <br />
+
+      <!-- password input -->
+      <div>
+        <label for="pass">Password ( 8 characters minimum)</label>
+        <input
+          type="password"
+          name="password"
+          id="pass"
+          size="30"
+          minlength="8"
+          autocomplete=""
+          required
+        />
+      </div>
+      <br />
+
+      <!-- message input -->
+      <div>
+        <label for="message">Your message:</label> <br />
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <p>
+      <em><strong>Thank you</strong>.</em>
+    </p>
+  </body>
+</html>
